@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: my-chatbot
+    env: python
+    plan: free
+    region: south asia   
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: GEMINI_API_KEY
+        value: AIzaSyCm7hdFAuQKTVrtZ1nvXh0eAV_2RxZv8SA
