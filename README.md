@@ -1,8 +1,8 @@
-CBIT Personal & Learning Assistant Chatbot
+# CBIT Personal & Learning Assistant Chatbot
 
 A web-based chatbot designed for CBIT students and outsiders to provide instant information about Chaitanya Bharathi Institute of Technology (CBIT) and act as a personal learning assistant. The chatbot uses a knowledge base for college-specific queries and falls back on Google Gemini AI for general learning queries or quizzes.
 
-Features
+# Features
 
 CBIT Knowledge Base: Provides instant answers about the college—vision, mission, courses, contact info, founder, directors, etc.
 
@@ -16,7 +16,8 @@ Responsive UI: Chat interface with messages on left (AI) and right (user), using
 
 Easy Interaction: Send messages via Enter key or Send button.
 
-Project Structure
+# Project Structure
+
 CBIT-Chatbot/
 ├── app.py              # Main Flask backend + Gemini AI integration
 ├── templates/
@@ -25,58 +26,46 @@ CBIT-Chatbot/
 ├── requirements.txt    # Python dependencies
 └── README.md           # Project description
 
-Files Overview
-app.py
+# Files Overview
+
+# app.py
 
 Main Flask application.
-
 Serves the frontend (chatbot.html) and handles /chat POST requests.
-
 First checks the CBIT knowledge base, then checks for restricted keywords, and finally falls back to Gemini AI.
 
-chatbot.html
+# chatbot.html
 
 Frontend HTML page for the chatbot interface.
-
 Features a scrollable chat box, styled messages (user vs bot), input field, and send button.
-
 Handles Enter key to send messages.
-
 Uses shades of purple, white, and black for a professional look.
 
-.env
+#.env
 
 Stores your Google Gemini API key securely.
 
-Format:
+# Format:
 
 GEMINI_API_KEY=your_api_key_here
-
 Getting Started
-
 Clone the repository:
-
 git clone <repository-url>
 cd CBIT-Chatbot
 
-
-Create a virtual environment:
+# Create a virtual environment:
 
 python -m venv venv
+
 # Activate it
 source venv/bin/activate      # Linux/Mac
 venv\Scripts\activate         # Windows
 
 
-Install dependencies:
+# Install dependencies:
 
 pip install -r requirements.txt
+Add your Gemini API key to .env: GEMINI_API_KEY= your_api_key_here
 
-
-Add your Gemini API key to .env:
-
-GEMINI_API_KEY=your_api_key_here
-
-run through -
-python app.py
+run through - python app.py
 
