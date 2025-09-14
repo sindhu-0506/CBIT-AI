@@ -77,11 +77,6 @@ Add your Gemini API key to .env:
 
 GEMINI_API_KEY=your_api_key_here
 
-
-Run the Flask app:
-
+run through -
 python app.py
 
-
-Open your browser:
-Visit  to chat with your CBIT Personal & Learning Assistant.
