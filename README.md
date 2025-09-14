@@ -41,7 +41,7 @@ Features a scrollable chat box, styled messages (user vs bot), input field, and 
 Handles Enter key to send messages.
 Uses shades of purple, white, and black for a professional look.
 
-#.env
+# .env
 
 Stores your Google Gemini API key securely.
 
